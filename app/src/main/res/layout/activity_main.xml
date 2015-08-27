@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:background="#50ABE2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="14dp"
+            android:id="@+id/header_up_layout">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:text="27°"
+                android:textColor="#fff"
+                android:textSize="50sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="晴"
+                android:textColor="#fff"
+                android:textSize="50sp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/header_search_layout"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#7CC1EA"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_marginRight="-18dp"
+                android:scaleType="center"
+                android:padding="8dp"
+                android:src="@drawable/uc_widget_search_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+            <TextView
+                android:layout_toRightOf="@id/search_icon"
+                android:text="搜索或输入网址"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/right_img"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/barcode_shortcut"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+            <ImageView
+                android:id="@+id/voice"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:src="@drawable/normal"
+                android:layout_toLeftOf="@+id/right_img"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/header_down_layout">
+
+            <ImageView
+                android:src="@drawable/notification_small_icon_for_l"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="80dp" />
+            <ImageView
+                android:src="@drawable/notification_small_icon_for_l"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:layout_height="80dp" />
+            <ImageView
+                android:src="@drawable/notification_small_icon_for_l"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="80dp" />
+            <ImageView
+                android:src="@drawable/notification_small_icon_for_l"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:layout_height="80dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
